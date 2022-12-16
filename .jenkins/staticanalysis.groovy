@@ -15,7 +15,7 @@ def runCI =
 
     def prj  = new rocProject('rocSOLVER', 'StaticAnalysis')
 
-    // Define test architectures, optional rocm version argument is available
+    // Define test architectures, optional ROCm version argument is available
     def nodes = new dockerNodes(nodeDetails, jobName, prj)
 
     boolean formatCheck = true
